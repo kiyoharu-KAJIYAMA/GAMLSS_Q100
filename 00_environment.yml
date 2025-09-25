@@ -1,0 +1,20 @@
+#--- make environment and run Rscript by following steps ---
+# conda env create -f 00_environment.yml
+# conda env list
+# conda activate gam
+# Rscript xxx.R
+
+name: gam
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.2  # select suitable version
+  - r-gamlss
+  - r-gamlss.dist
+  - r-ggplot2
+  - r-tidyr
+  - r-dplyr
+  - r-car
+  - r-nortest
+  - r-e1071
+  - r-boot
